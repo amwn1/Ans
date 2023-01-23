@@ -1,0 +1,47 @@
+ Q1. Describe higher order functions.
+
+> Higher order functions are functions that works on other
+  functions, either by taking them as arguments or by returning
+  them.
+
+ 
+Q2. write use cases + any one code example for map, filter and reduce.
+
+> Filter
+
+var n = [2,3,4,56,3];
+ 
+const NewNumbers = n.filter(function (num){
+  return num < 10;
+})
+ 
+console.log(NewNumbers)
+ 
+ 
+OUTPUT
+ [2, 3, 4, 3]
+
+
+
+>Map
+
+var n = [2,3,4,56,3];
+ 
+function double(z){
+  return z*2;
+}
+ 
+const show = n.map(double)
+console.log(show);
+
+
+>Reduce
+
+var array = [36, 25, 6, 15];
+
+array.reduce(function(accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+
+OUTPUT:
+82
